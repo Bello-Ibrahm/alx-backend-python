@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-""" Add module """
+#!/usr/bin/env python3
+""" Addition module """
 
 
 def add(a: float, b: float) -> float:
