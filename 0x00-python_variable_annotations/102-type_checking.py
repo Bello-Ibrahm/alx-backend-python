@@ -1,16 +1,25 @@
 #!/usr/bin/env python3
-''' Module '''
+'''A module containing a function to zoom in on an array by
+duplicating its elements multiple times.
+'''
 from typing import List, Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
-    ''' Comment '''
+    '''Zooms in on an array by duplicating its elements multiple times.
+
+    Parameters:
+        - lst (Tuple): The input array.
+        - factor (int): The zoom factor (default is 2).
+
+    Returns:
+        - List: The zoomed-in array.
+    '''
     zoomed_in: List = [
         item for item in lst
         for i in range(int(factor))
     ]
     return zoomed_in
-
 
 array = (12, 72, 91)
 
