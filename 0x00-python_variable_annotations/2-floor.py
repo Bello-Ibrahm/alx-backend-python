@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-""" Module """
+"""Module"""
 
 
 def floor(n: float) -> int:
-    """ Return an int of a floating point-number
+    """
+    Parameters:
+        n (float): The floating-point number to convert to an integer.
+
+    Returns:
+        int: The integer representation of the floating-point number.
+
+    This function takes a floating-point number as input and
+    returns its integer representation.
     """
     return int(n)
