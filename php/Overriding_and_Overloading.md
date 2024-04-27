@@ -42,7 +42,35 @@ $db2 = new OracleDatabase();
 $db2->getConnection();
 
 ```
+**Image output 1 here**
 
+```
+<?php
+
+class Database {
+  public function getConnection()
+  {
+    echo "Default connection from the MySQL Database" . PHP_EOL;
+  } 
+}
+
+
+class OracleDatabase extends Database {
+
+  /* public function getConnection()
+  {
+    echo "Connection from the Oracle Database" . PHP_EOL;
+  } */
+}
+
+
+$db1 = new Database();
+$db1->getConnection();
+
+$db2 = new OracleDatabase();
+$db2->getConnection();
+```
+**Image output 2 here**
 
 # Overloading Image here
 
@@ -77,7 +105,7 @@ class Employee {
 }
 ```
 Running the code above result in error: 
-*Image here*
+*Image output 1 here*
 
 **Using the magic __call() method:**
 ```
@@ -124,6 +152,7 @@ $emp1->calculateSalary(); // Output => Default, your salary is $1800
 $emp2 = new Employee();
 $emp2->calculateSalary(190, 15); // Output => Your salary is $2850
 ```
+**Overloading_img2 __call()**
 
 **Using the variadic function (variable-length) method:**
 ```
@@ -168,9 +197,9 @@ $emp1 = new Employee();
 $emp1->calculateSalary(); // Output => Default, your salary is $1800
 
 $emp2 = new Employee();
-$emp2->calculateSalary(190, 15); // Output => Your salary is $2850
+$emp2->calculateSalary(165, 20); // Output => Your salary is $3300
 ```
-
+**Overloading_img3 variadic**
 **Conclusion**
 Both overriding and overloading are essential concepts in PHP object-oriented programming, each serving distinct purposes:
 
